@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+	<script src="js/funciones.js"></script>
+
+	<style>
+
+		body 
+		{
+			background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg');
+
+		}
+
+		.container
+		{
+			background-image: url('imagen/fondo.jpg');
+			
+
+		}
+
+		.botoncabecera
+		{
+			background-color: #CD6155;
+			margin: 15px;
+			border-radius: 10px;
+		}
+
+	
+		.control
+		{
+			background-color: #CD6155;
+			margin: 15px;
+			border-radius: 10px;
+		}
+		
+		#enlace-sin-subrayado {
+            text-decoration: none;
+
+	</style>
+
+	
+</head>
+<body>
+	
+	<div  class="container mt-5">
+		<!--button class="btn btn-primary">bootstrap</button>
+		<i class="fa-solid fa-arrow-left"></i-->
+
+		<section class="row">
+			
+			<div style="background: transparent;" class="row col-md-6 col-lg-6 col-xs-12 col-s-12 mt-1 ms-1">
+			
+				<div class="row justify-content-between ">
+					<div class="col-auto botoncabecera">
+						<i class="fa-solid fa-arrow-left"></i>
+					</div>
+
+					<div class="col-auto botoncabecera">
+						<p class="d-none d-md-block">Reproduciendo ahora</p>
+						<p class="d-block d-md-none">ahora</p>
+					</div>
+					
+					<div class="col-auto botoncabecera">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					
+					<div class="col">
+						<img src="foto/portada.jpg" width="150px" class="rounded-circle">
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<h4>
+							<div class="row justify-content-between">
+							<span class="col-3 nombremp3">Nombre</span>
+							<span class="col-3 text-end audioTime" data-attr="timer">Tiempo</span>
+							</div>
+						</h4>
+						
+					</div>
+				</div>
+
+				<div class="col">
+					✦•······················•✦•······················•✦•······················•✦•······················•✦•······················•✦
+
+						<div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+						  <div class="progress-bar progress-bar-striped bg-danger updateProgress"></div>
+						</div>
+				</div>
+
+			
+				<div class="row justify-content-between">
+					<div class="col-auto control">
+						<i class="fa-solid fa-backward"></i>
+					</div>
+
+					<div class="col-auto control">
+						<i class="fa-solid fa-play"></i>
+					</div>
+						
+					<div class="col-auto control">
+						<i class="fa-solid fa-forward"></i>
+					</div>
+				</div>
+
+			</div>
+
+		<div style="background: transparent;" class="row col-md-6 col-lg-6 col-xs-12 col-s-12 mt-1 ms-1">
+
+			<div class="col mt-3">
+				<h2>Lista de canciones</h2>
+			</div>
+			
+			<ul class="list-group list-group-flush playlist">
+			  <li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/Elefante - Angel.mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">Angel - Elefante</a>
+			  </li>
+
+			  <li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/Los Enanitos Verdes - La Muralla Verde (Official Audio).mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">La muralla verde - Enanitos verdes</a>
+			  </li>
+
+			  <li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/HA-ASH - Supongo Que Lo Sabes (Video Oficial).mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">Supongo que lo sabes - HA-ASH</a>
+			  </li>
+
+			  <li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/Morat - Cuando Nadie Ve.mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">Cuando nadie ve - Morat</a>
+			  </li>
+
+			  <!--li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/Amapolas - Leo Rizzi [Letra].mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">Amapolas - Leo Rizzi</a>
+			  </li-->
+
+			  <li style="background: transparent; border-color: black;" class="list-group-item" data-src="audio/iñigo quintero - Si No Estás (Letra Oficial).mp3">-`♡´-
+			  	<a href="#" id="enlace-sin-subrayado" class="text-black">Si no estás - Iñigo Quintero</a>
+			  </li>
+			</ul>
+
+			
+
+		</div>
+		</section>
+
+	</div>
+
+
+
+</body>
+</html>
